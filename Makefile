@@ -12,6 +12,6 @@ $(NAME):$(OBJ)
 	cc $(FLAGS) -c $<
 
 clean:
-	rm -f $(SRC)
+	rm -f $(OBJ)
 fclean:clean
 	rm -f $(NAME)

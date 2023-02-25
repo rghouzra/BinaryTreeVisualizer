@@ -20,5 +20,5 @@ typedef struct s_tree
 	struct s_tree *left;
 	struct s_tree *right;
 }t_tree;
-void print_tree(t_tree *root, char *s);
+void print_tree(t_tree *root);
 #endif

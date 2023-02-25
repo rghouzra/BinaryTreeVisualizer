@@ -24,13 +24,10 @@ void print_in_dot(t_tree *node,int i, int *count)
     print_in_dot(node->right,node_id,count);
 }
 
-void print_tree(t_tree *root, char *s)
+void print_tree(t_tree *root)
  {
-    printf("/*\n%s\n*/\n", s);
     printf("digraph {\n");
     int count = 0;
     print_in_dot(root, -1337, &count);
     printf("}\n");
 }
-
-
