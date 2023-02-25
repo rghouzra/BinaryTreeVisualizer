@@ -1,4 +1,4 @@
-NAME = libft.a
+NAME = lib_print_tree.a
 SRC = print_tree.c
 INCLUDE = print_tree.h
 OBJ = $(SRC:.c=.o)
