@@ -8,7 +8,7 @@ The "print_tree_in_dot_format" project is a C program that generates a DOT langu
 
 To use this program, you'll need to have Graphviz installed on your machine. You can download Graphviz from the official website [here](https://graphviz.org/download/).
 
-To compile the program, you can use the included Makefile. The Makefile creates a static library called `libprint_tree_in_dot_format.a`, which you can link to your own C programs. To create the library, navigate to the `print_tree_in_dot_format` directory and run the following command:
+To compile the program, you can use the included Makefile. The Makefile creates a static library called `libprint_tree.a`, which you can link to your own C programs. To create the library run the following command:
 
 ```
 make
