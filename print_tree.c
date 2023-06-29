@@ -18,7 +18,7 @@ void print_in_dot(t_tree *node,int i, int *count)
         return;
     int node_id = ++(*count);
     printf("  node%d [label=\"%s \"];\n", node_id, node->value);
-    if (i != -1337)
+    if (i != -1)
         printf("  node%d -> node%d;\n",i,node_id);
     print_in_dot(node->left,node_id,count);
     print_in_dot(node->right,node_id,count);
