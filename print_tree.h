@@ -13,6 +13,7 @@
 #ifndef PRINT_TREE_H
 # define PRINT_TREE_H
 #include <stdio.h>
+#include <unistd.h>
 #include <stdlib.h>
 typedef struct s_tree
 {	
