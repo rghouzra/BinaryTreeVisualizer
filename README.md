@@ -1,8 +1,8 @@
 # readme
 
-# Print Tree in Dot Format
+# Print bTree in Dot Format
 
-The "print_tree_in_dot_format" project is a C program that generates a DOT language file for visualizing tree structures using the Graphviz software. The program takes in a tree structure in the form of nodes and edges and outputs a DOT file that can be used to generate an image of the tree.
+The "print_tree_in_dot_format" project is a C program that generates a DOT language file for visualizing binary tree structures using the Graphviz software. The program takes in a tree structure in the form of nodes and edges and outputs a DOT file that can be used to generate an image of the tree.
 
 ## Installation
 
