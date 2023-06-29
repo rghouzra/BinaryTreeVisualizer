@@ -15,6 +15,10 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
+#include <string.h>
+#include <sys/errno.h>
+
+# define nullptr (void *)0x0
 typedef struct s_tree
 {	
 	void *value;
