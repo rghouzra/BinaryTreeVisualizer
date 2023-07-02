@@ -31,7 +31,7 @@ void print_tree(t_tree *root)
      fp = stdout;    
     /*
      * u can override fp with fopen system function like in this example:
-     * fp = fopen("filename", "rw");
+     * fp = fopen("filename", "w");
     */
     if(fp == nullptr)
     {
@@ -42,4 +42,5 @@ void print_tree(t_tree *root)
     int count = 0;
     print_in_dot(root, -1, &count, fp);
     fprintf(fp, "}\n");
+    fclose(fp);
 }
