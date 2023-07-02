@@ -40,6 +40,6 @@ void print_tree(t_tree *root)
     }
     fprintf(fp, "digraph {\n");
     int count = 0;
-    print_in_dot(root, -1337, &count, fp);
+    print_in_dot(root, -1, &count, fp);
     fprintf(fp, "}\n");
 }
