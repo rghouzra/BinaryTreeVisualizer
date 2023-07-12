@@ -27,20 +27,21 @@ void print_in_dot(t_tree *node,int i, int *count, FILE *fp)
 
 void print_tree(t_tree *root)
  {
-    FILE *fp;
-	
-     fp = stdout;    
-    /*
-     * u can override fp with fopen system function like in this example:
-     * fp = fopen("filename", "w");
-    */
-    if (fp == nullptr){
-    	fprintf(stderr,"%s\n", strerror(errno));
-	exit(1);
-    }
-    fprintf(fp, "digraph {\n");
-    int count = 0;
-    print_in_dot(root, -1, &count, fp);
-    fprintf(fp, "}\n");
-    fclose(fp);
+	FILE *fp;
+	int count;
+
+	count = 0;
+	fp = stdout;    
+    	/*
+     		* u can override fp with fopen system function like in this example:
+     		* fp = fopen("filename", "w");
+    	*/
+    	if (fp == nullptr){
+    		fprintf(stderr,"%s\n", strerror(errno));
+		exit(1);
+    	}
+    	fprintf(fp, "digraph {\n");
+    	print_in_dot(root, -1, &count, fp);
+    	fprintf(fp, "}\n");
+    	fclose(fp);
 }
