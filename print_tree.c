@@ -43,5 +43,5 @@ void print_tree(t_tree *root)
     	fprintf(fp, "digraph {\n");
     	print_in_dot(root, -1, &count, fp);
     	fprintf(fp, "}\n");
-    	fclose(fp);
+	// fclose(fp);
 }
