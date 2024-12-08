@@ -16,7 +16,5 @@ make
 ```
 
 ## Usage
-
-To use the `lib_print_tree.a` library in your own C programs, you'll need to include the `print_tree.h` header file and link against the `lib_print_tree.a` library.
-
-And then take the output to https://tinyurl.com/ycw8cmtb
+```
+bash runTests.sh
