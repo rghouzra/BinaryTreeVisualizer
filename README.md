@@ -1,20 +1,50 @@
-# readme
+# Print Tree
 
-# Print bTree in Dot Format
+This project provides functions to print a binary tree in DOT and JSON formats. It includes unit tests using Google Test to verify the functionality of the tree traversal and printing functions.
 
-The "print_tree_in_dot_format" project is a C program that generates a DOT language file for visualizing binary tree structures using the Graphviz software. The program takes in a tree structure in the form of nodes and edges and outputs a DOT file that can be used to generate an image of the tree.
+## Table of Contents
+
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Building the Project](#building-the-project)
+- [Running the Tests](#running-the-tests)
+- [Usage](#usage)
+- [License](#license)
+
+## Prerequisites
+
+Before you begin, ensure you have the following installed on your system:
+
+- CMake (version 3.10 or higher)
+- GCC or Clang compiler
+- Git
 
 ## Installation
 
-To use this program, you'll need to have Graphviz installed on your machine. You can download Graphviz from the official website [here](https://graphviz.org/download/).
+1. **Clone the repository:**
 
-To compile the program, you can use the included Makefile. The Makefile creates a static library called `libprint_tree.a`, which you can link to your own C programs. To create the library run the following command:
+   ```sh
+   git clone https://github.com/rghouzra/print_btree_in_dot_format.git
+   cd print_btree_in_dot_format
+   ```
+2. **Create a build directory:**
 
-```
-make
+   ```sh
+   mkdir build
+   cd build
+   ```
+3. **Run CMake:**
 
-```
+   ```sh
+   cmake ..
+   ```
+4. ***Run Make:**
 
-## Usage
-```
-bash runTests.sh
+   ```sh
+   make
+   ```
+5. **Run the tests:**
+
+   ```sh
+   ctest --output-on-failure
+   ```
