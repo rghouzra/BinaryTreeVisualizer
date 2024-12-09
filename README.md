@@ -24,7 +24,7 @@ Before you begin, ensure you have the following installed on your system:
 1. **Clone the repository:**
 
    ```sh
-   git clone https://github.com/rghouzra/print_btree_in_dot_format.git
+   git clone https://github.com/rghouzra/BinaryTreeVisualizer.git
    cd print_btree_in_dot_format
    ```
 2. **Create a build directory:**
