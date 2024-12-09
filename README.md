@@ -63,5 +63,5 @@ paste the output in https://dreampuf.github.io/GraphvizOnline/
 ```
 #for json formats
 ```
-paste the output in https://jsoneditoronline.org/
+paste the output in https://jsonformatter.org/json-viewer
 ```   
