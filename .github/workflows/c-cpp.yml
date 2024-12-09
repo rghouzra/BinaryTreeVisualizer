@@ -14,6 +14,8 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
+      with:
+        submodules: recursive  # Ensure submodules are checked out
 
     - name: Install dependencies
       run: sudo apt-get install -y cmake
