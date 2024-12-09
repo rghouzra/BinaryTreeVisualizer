@@ -48,3 +48,21 @@ Before you begin, ensure you have the following installed on your system:
    ```sh
    ctest --output-on-failure
    ```
+
+## vizualization
+
+1. **Run the executable:**
+
+   ```sh
+   ./print_tree
+   ```
+2. **Copy the output
+
+#for dot formats
+```
+paste the output in https://dreampuf.github.io/GraphvizOnline/
+```
+#for json formats
+```
+paste the output in https://jsoneditoronline.org/
+```   
