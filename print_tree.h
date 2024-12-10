@@ -11,7 +11,7 @@ extern "C" {
 #endif
 
 typedef struct t_tree {
-    char *value;
+    void *value;
     struct t_tree *left;
     struct t_tree *right;
 } t_tree;

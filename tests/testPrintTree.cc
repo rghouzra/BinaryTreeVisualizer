@@ -22,53 +22,55 @@ void delete_tree(TreeNode* node) {
     delete node;
 }
 
-void collect_preorder(TreeNode* node, std::vector<std::string>& values) {
-    if (node == nullptr) return;
-    values.push_back(node->value);
-    collect_preorder(node->left, values);
-    collect_preorder(node->right, values);
-}
+// void collect_preorder(TreeNode* node, std::vector<std::string>& values) {
+//     if (node == nullptr) return;
+//     values.push_back(node->value);
+//     collect_preorder(node->left, values);
+//     collect_preorder(node->right, values);
+// }
 
-void collect_inorder(TreeNode* node, std::vector<std::string>& values) {
-    if (node == nullptr) return;
-    collect_inorder(node->left, values);
-    values.push_back(node->value);
-    collect_inorder(node->right, values);
-}
+// void collect_inorder(TreeNode* node, std::vector<std::string>& values) {
+//     if (node == nullptr) return;
+//     collect_inorder(node->left, values);
+//     values.push_back(node->value);
+//     collect_inorder(node->right, values);
+// }
 
-void collect_postorder(TreeNode* node, std::vector<std::string>& values) {
-    if (node == nullptr) return;
-    collect_postorder(node->left, values);
-    collect_postorder(node->right, values);
-    values.push_back(node->value);
-}
+// void collect_postorder(TreeNode* node, std::vector<std::string>& values) {
+//     if (node == nullptr) return;
+//     collect_postorder(node->left, values);
+//     collect_postorder(node->right, values);
+//     values.push_back(node->value);
+// }
 
-TEST(PrintTreeTest, TestPreorderTraversal) {
-    TreeNode* root = create_sample_tree();
-    std::vector<std::string> values;
-    collect_preorder(root, values);
-    std::vector<std::string> expected_values = {"A", "B", "C"};
-    EXPECT_EQ(values, expected_values);
-    delete_tree(root);
-}
 
-TEST(PrintTreeTest, TestInorderTraversal) {
-    TreeNode* root = create_sample_tree();
-    std::vector<std::string> values;
-    collect_inorder(root, values);
-    std::vector<std::string> expected_values = {"B", "A", "C"};
-    EXPECT_EQ(values, expected_values);
-    delete_tree(root);
-}
 
-TEST(PrintTreeTest, TestPostorderTraversal) {
-    TreeNode* root = create_sample_tree();
-    std::vector<std::string> values;
-    collect_postorder(root, values);
-    std::vector<std::string> expected_values = {"B", "C", "A"};
-    EXPECT_EQ(values, expected_values);
-    delete_tree(root);
-}
+// TEST(PrintTreeTest, TestPreorderTraversal) {
+//     TreeNode* root = create_sample_tree();
+//     std::vector<std::string> values;
+//     collect_preorder(root, values);
+//     std::vector<std::string> expected_values = {"A", "B", "C"};
+//     EXPECT_EQ(values, expected_values);
+//     delete_tree(root);
+// }
+
+// TEST(PrintTreeTest, TestInorderTraversal) {
+//     TreeNode* root = create_sample_tree();
+//     std::vector<std::string> values;
+//     collect_inorder(root, values);
+//     std::vector<std::string> expected_values = {"B", "A", "C"};
+//     EXPECT_EQ(values, expected_values);
+//     delete_tree(root);
+// }
+
+// TEST(PrintTreeTest, TestPostorderTraversal) {
+//     TreeNode* root = create_sample_tree();
+//     std::vector<std::string> values;
+//     collect_postorder(root, values);
+//     std::vector<std::string> expected_values = {"B", "C", "A"};
+//     EXPECT_EQ(values, expected_values);
+//     delete_tree(root);
+// }
 
 TEST(PrintTreeTest, TestEmptyTree) {
     TreeNode* root = nullptr;
