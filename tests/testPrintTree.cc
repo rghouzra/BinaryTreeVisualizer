@@ -22,12 +22,12 @@ void delete_tree(TreeNode* node) {
     delete node;
 }
 
-// void collect_preorder(TreeNode* node, std::vector<std::string>& values) {
-//     if (node == nullptr) return;
-//     values.push_back(node->value);
-//     collect_preorder(node->left, values);
-//     collect_preorder(node->right, values);
-// }
+void collect_preorder(TreeNode* node, std::vector<std::string>& values) {
+    if (node == nullptr) return;
+    values.push_back(node->value);
+    collect_preorder(node->left, values);
+    collect_preorder(node->right, values);
+}
 
 // void collect_inorder(TreeNode* node, std::vector<std::string>& values) {
 //     if (node == nullptr) return;
